@@ -2,13 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-f= open("./data/gisette_train.data")
+f= open("./Data/gisette_train.data")
 data=[]
 for row in f.readlines():
     data.append((row.strip()).split(" "))
 f.close()
 
-f= open("./data/gisette_train.labels")
+f= open("./Data/gisette_train.labels")
 classes=[]
 for row in f.readlines():
     classes.append((row.strip()).split(" "))
@@ -175,13 +175,13 @@ plt.show()
 del data
 del classes
 
-f= open("./data/gisette_valid.data")
+f= open("./Data/gisette_valid.data")
 data=[]
 for row in f.readlines():
     data.append((row.strip()).split(" "))
 f.close()
 
-f= open("./data/gisette_valid.labels")
+f= open("./Data/gisette_valid.labels")
 classes=[]
 for row in f.readlines():
     classes.append((row.strip()).split(" "))
